@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Check, ChevronRight, Star, LayoutDashboard, Calendar1, FileText, Bell, Zap, Workflow, Brain, Sparkles } from "lucide-react";
+import { Check, ChevronRight, Star, LayoutDashboard, Calendar1, FileText, Bell, Workflow, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 
@@ -46,37 +46,36 @@ export default function Home() {
           </div>
         </div>
         <img src="/media/logo_symbol_wt.svg" alt="" className="absolute bottom-0 right-0 w-[90vw] lg:w-[40vw] opacity-5" />
-
       </section>
 
-      <section className="py-24">
-        <div className="page-width space-y-18">
+      <section className="py-30">
+        <div className="page-width space-y-30">
           <header className="flex flex-col space-y-1">
             <h2 className="max-w-xl text-4xl font-bold tracking-tight">
-              Products that work together to help you break down silos between departments
+              Products that work together to help you <span className="text-brand-red">break down silos</span> between departments
             </h2>
           </header>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
             {/* Cards */}
 
-            <Link href="/platform/dashboard/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-(--brand-color) rounded-lg transition-colors duration-300 ease-in-out">
+            <Link href="/platform/dashboard/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-brand-red rounded-lg transition-colors duration-300 ease-in-out">
               <div className="flex items-center gap-2">
-                <LayoutDashboard className="text-brand" />
+                <LayoutDashboard className="text-brand-red" />
                 <h3 className="text-lg font-semibold tracking-tight">Dashboard</h3>
               </div>
               <Separator decorative />
               <ul className="space-y-2">
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
-                  Manage your shop's operations in one place.
+                  <Check size={14} className="text-brand-red h-5" />
+                  Manage your shop&apos;s operations in one place.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Track your income and expenses.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Manage your inventory.
                 </li>
               </ul>
@@ -86,23 +85,23 @@ export default function Home() {
               </Button>
             </Link>
 
-            <Link href="/platform/appointments/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-(--brand-color) rounded-lg transition-colors duration-300 ease-in-out">
+            <Link href="/platform/appointments/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-brand-red rounded-lg transition-colors duration-300 ease-in-out">
               <div className="flex items-center gap-2">
-                <Calendar1 className="text-brand" />
+                <Calendar1 className="text-brand-red" />
                 <h3 className="text-lg font-semibold tracking-tight">Appointments</h3>
               </div>
               <Separator decorative />
               <ul className="space-y-2">
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Seamless scheduling
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Track your income and expenses.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Manage your inventory.
                 </li>
               </ul>
@@ -112,23 +111,23 @@ export default function Home() {
               </Button>
             </Link>
 
-            <Link href="/platform/estimates/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-(--brand-color) rounded-lg transition-colors duration-300 ease-in-out">
+            <Link href="/platform/estimates/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-brand-red rounded-lg transition-colors duration-300 ease-in-out">
               <div className="flex items-center gap-2">
-                <FileText className="text-brand" />
+                <FileText className="text-brand-red" />
                 <h3 className="text-lg font-semibold tracking-tight">Estimates</h3>
               </div>
               <Separator decorative />
               <ul className="space-y-2">
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Create professional estimates in seconds.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Track your income and expenses.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Manage your inventory.
                 </li>
               </ul>
@@ -138,23 +137,23 @@ export default function Home() {
               </Button>
             </Link>
 
-            <Link href="/platform/notifications/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-(--brand-color) rounded-lg transition-colors duration-300 ease-in-out">
+            <Link href="/platform/notifications/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-brand-red rounded-lg transition-colors duration-300 ease-in-out">
               <div className="flex items-center gap-2">
-                <Bell className="text-brand" />
+                <Bell className="text-brand-red" />
                 <h3 className="text-lg font-semibold tracking-tight">Notifications</h3>
               </div>
               <Separator decorative />
               <ul className="space-y-2">
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Create professional estimates in seconds.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Track your income and expenses.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Manage your inventory.
                 </li>
               </ul>
@@ -164,23 +163,23 @@ export default function Home() {
               </Button>
             </Link>
 
-            <Link href="/platform/automations/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-(--brand-color) rounded-lg transition-colors duration-300 ease-in-out">
+            <Link href="/platform/automations/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-brand-red rounded-lg transition-colors duration-300 ease-in-out">
               <div className="flex items-center gap-2">
-                <Workflow className="text-brand" />
+                <Workflow className="text-brand-red" />
                 <h3 className="text-lg font-semibold tracking-tight">Automations</h3>
               </div>
               <Separator decorative />
               <ul className="space-y-2">
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Create professional estimates in seconds.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Track your income and expenses.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Manage your inventory.
                 </li>
               </ul>
@@ -190,23 +189,23 @@ export default function Home() {
               </Button>
             </Link>
 
-            <Link href="/platform/ai/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-(--brand-color) rounded-lg transition-colors duration-300 ease-in-out">
+            <Link href="/platform/ai/" className="group flex flex-col space-y-4 p-6 lg:p-8 border hover:border-brand-red rounded-lg transition-colors duration-300 ease-in-out">
               <div className="flex items-center gap-2">
-                <Sparkles className="text-brand" />
+                <Sparkles className="text-brand-red" />
                 <h3 className="text-lg font-semibold tracking-tight">AI</h3>
               </div>
               <Separator decorative />
               <ul className="space-y-2">
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Create professional estimates in seconds.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Track your income and expenses.
                 </li>
                 <li className="flex gap-2 text-sm text-muted-foreground">
-                  <Check size={14} className="text-brand h-5" />
+                  <Check size={14} className="text-brand-red h-5" />
                   Manage your inventory.
                 </li>
               </ul>
@@ -216,18 +215,58 @@ export default function Home() {
               </Button>
             </Link>
 
+            <div className="col-span-full flex flex-col items-center mt-11">
+              <Link href="/platform/">
+                <Button variant="brand" size="lg">Explore the platform</Button>
+              </Link>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="py-30">
+        <div className="page-width space-y-30">
+          <header className="flex flex-col space-y-1">
+            <h2 className="max-w-xl text-4xl font-bold tracking-tight">
+              Meet the founders like you who chose to grow with Automotiv
+            </h2>
+          </header>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="aspect-6/4 grid place-items-center border-r border-b">Logo</div>
+            <div className="aspect-6/4 grid place-items-center border-r border-b">Logo</div>
+            <div className="aspect-6/4 grid place-items-center border-b">Logo</div>
+            <div className="aspect-6/4 grid place-items-center border-r">Logo</div>
+            <div className="aspect-6/4 grid place-items-center border-r">Logo</div>
+            <div className="aspect-6/4 grid place-items-center">Logo</div>
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-accent">
-        <div className="page-width space-y-18">
+      <section className="py-30 bg-accent">
+        <div className="page-width space-y-30">
           <header className="flex flex-col space-y-1">
             <h2 className="max-w-xl text-4xl font-bold tracking-tight">
               Remarkable results for every size business.
             </h2>
             <p className="text-sm lg:text-md text-muted-foregroundt lg:mb-12">Increase savings, automate busy work, and make better decisions by managing global HR, Payroll, IT, and Finance in one place.</p>
           </header>
+        </div>
+      </section>
+
+      <section className="py-30">
+        <div className="page-width space-y-30">
+          <header className="flex flex-col space-y-1">
+            <h2 className="max-w-xl text-4xl font-bold tracking-tight">
+              Built for the founders that keep the world moving
+            </h2>
+          </header>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+            <div className="aspect-square rounded-md bg-accent"></div>
+            <div className="aspect-square rounded-md bg-accent"></div>
+            <div className="aspect-square rounded-md bg-accent"></div>
+            <div className="aspect-square rounded-md bg-accent"></div>
+          </div>
         </div>
       </section>
 

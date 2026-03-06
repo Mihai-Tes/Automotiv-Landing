@@ -31,6 +31,9 @@ body {
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-brand-red: var(--brand-red);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -66,7 +69,7 @@ body {
 
 :root {
 
-  --brand-color: #FF0040;
+  --brand-red: oklch(0.6322 0.254177 20.8493);
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -103,6 +106,8 @@ body {
 }
 
 .dark {
+  --brand-red: oklch(0.6322 0.254177 20.8493);
+
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -147,17 +152,5 @@ body {
 
   .page-width {
     @apply max-w-7xl mx-auto px-8 lg:px-12;
-  }
-
-  .text-brand {
-    @apply text-[var(--brand-color)];
-  }
-
-  .bg-brand {
-    @apply bg-[var(--brand-color)];
-  }
-
-  .border-brand {
-    @apply border-[var(--brand-color)];
   }
 }

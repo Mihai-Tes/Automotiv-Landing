@@ -24,14 +24,14 @@ export const navData: NavItem[] = [
         title: "Dashboard",
         href: "/platform/dashboard",
         description: "A bird's eye view of your entire shop operation.",
-        image: "https://images.unsplash.com/photo-1551288049-bbda3363355d?auto=format&fit=crop&q=80&w=400&h=250"
+        image: "/media/logo_symbol_red.svg"
     },
     {
         childOf: "Platform",
         title: "Inventory",
         href: "/platform/inventory",
         description: "Track parts, supplies, and stock levels in real-time.",
-        image: "https://images.unsplash.com/photo-1586769852044-692d6e392394?auto=format&fit=crop&q=80&w=400&h=250"
+        image: "/media/logo_symbol_red.svg"
     },
 
 
@@ -51,25 +51,25 @@ export const navData: NavItem[] = [
     {
         childOf: "Solutions",
         title: "Inventory Management",
-        href: "/solutions/inventory-management",
+        href: "/solutions/inventory-management/",
         description: "Optimize your stock and reduce waste.",
     },
     {
         childOf: "Solutions",
         title: "Estimates",
-        href: "/solutions/estimates",
+        href: "/solutions/estimates/",
         description: "Create professional estimates in seconds.",
     },
     {
         childOf: "Solutions",
         title: "Invoicing",
-        href: "/solutions/invoicing",
+        href: "/solutions/invoicing/",
         description: "Get paid faster with automated invoicing.",
     },
     {
         childOf: "Solutions",
         title: "Marketing",
-        href: "/solutions/marketing",
+        href: "/solutions/marketing/",
         description: "Grow your business with targeted campaigns.",
     },
 
@@ -78,19 +78,37 @@ export const navData: NavItem[] = [
 
     {
         title: "Resources",
-        href: "/resources",
+        href: "/resources/",
+    },
+    {
+        childOf: "Resources",
+        title: "Documentation",
+        href: "https://docs.automotiv.app",
+        description: "Everything you need to master the platform.",
+    },
+    {
+        childOf: "Resources",
+        title: "Changelog",
+        href: "https://automotiv.app/changelog/",
+        description: "What's new in the platform.",
+    },
+    {
+        childOf: "Resources",
+        title: "Roadmap",
+        href: "https://automotiv.app/roadmap/",
+        description: "Future plans and upcoming features.",
     },
     {
         childOf: "Resources",
         title: "Blog",
-        href: "/blog",
+        href: "/blog/",
         description: "Insights and tips for modern auto shops.",
     },
     {
         childOf: "Resources",
-        title: "Docs",
-        href: "https://docs.automotiv.app",
-        description: "Everything you need to master the platform.",
+        title: "FAQ",
+        href: "https://automotiv.app/faq/",
+        description: "Frequently Asked Questions.",
     },
 
 
@@ -101,7 +119,7 @@ export const navData: NavItem[] = [
 
     {
         title: "Pricing",
-        href: "/pricing",
+        href: "/pricing/",
     },
 
 
@@ -109,6 +127,6 @@ export const navData: NavItem[] = [
 
     {
         title: "Contact",
-        href: "/contact",
+        href: "/contact/",
     },
 ];
