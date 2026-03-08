@@ -89,10 +89,10 @@ export default function Header() {
 
     return (
         <header className={cn("fixed top-0 left-0 right-0 z-50 text-white bg-[#242429]/0 transition-all duration-300 ease-in-out", (scroll || subNavOpen) && "bg-[#242429]/90 backdrop-blur-md shadow-md/10")}>
-            <div className="page-width h-14 md:h-16 flex items-center gap-12 z-10 relative">
+            <div className="page-width max-sm:px-5 h-14 md:h-16 flex items-center gap-12 z-10 relative">
                 <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tighter">
-                    <Image width={24} height={24} src="/media/logo_symbol_wt.svg" alt="" className="size-5 lg:size-6" />
-                    automotiv
+                    <Image width={28.606} height={24} src="/media/a_symbol_wt.svg" alt="" className="size-5" />
+                    <span className="max-sm:hidden">automotiv</span>
                 </Link>
                 <nav className="flex-1 max-md:hidden">
                     <DesktopNav />
@@ -102,9 +102,9 @@ export default function Header() {
                     <Button variant="ghost">Login</Button>
                     <Button variant="brand">Dashboard</Button>
                 </div>
-                <Button variant="ghost" className="md:hidden ml-auto">
-                    <Menu />
-                </Button>
+                <div className="sm:hidden absolute top-0 right-0 bottom-0 h-full aspect-square grid place-items-center bg-brand-red">
+                    <Menu className="size-4" />
+                </div>
             </div>
 
             {activeParentItem && (

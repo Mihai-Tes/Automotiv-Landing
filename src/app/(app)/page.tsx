@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Check, ChevronRight, Star, LayoutDashboard, Calendar1, FileText, Bell, Workflow, Sparkles } from "lucide-react";
+import { Check, ChevronRight, Star, LayoutDashboard, Calendar1, FileText, Bell, Workflow, Sparkles, Plus } from "lucide-react";
 import Link from "next/link";
+import FoundersSwiper from "@/components/shared/founders-swiper";
 
 
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
       </section>
 
       <section className="py-30">
-        <div className="page-width space-y-30">
+        <div className="page-width space-y-20">
           <header className="flex flex-col space-y-1">
             <h2 className="max-w-xl text-4xl font-bold tracking-tight">
               Products that work together to help you <span className="text-brand-red">break down silos</span> between departments
@@ -226,13 +227,13 @@ export default function Home() {
       </section>
 
       <section className="py-30">
-        <div className="page-width space-y-30">
+        <div className="page-width space-y-20">
           <header className="flex flex-col space-y-1">
             <h2 className="max-w-xl text-4xl font-bold tracking-tight">
               Meet the founders like you who chose to grow with Automotiv
             </h2>
           </header>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 lg:grid-cols-3">
             <div className="aspect-6/4 grid place-items-center border-r border-b">Logo</div>
             <div className="aspect-6/4 grid place-items-center border-r border-b">Logo</div>
             <div className="aspect-6/4 grid place-items-center border-b">Logo</div>
@@ -249,24 +250,51 @@ export default function Home() {
             <h2 className="max-w-xl text-4xl font-bold tracking-tight">
               Remarkable results for every size business.
             </h2>
-            <p className="text-sm lg:text-md text-muted-foregroundt lg:mb-12">Increase savings, automate busy work, and make better decisions by managing global HR, Payroll, IT, and Finance in one place.</p>
           </header>
+          <div className="grid grid-cols-6">
+            <div className="col-start-5 col-end-7">
+              At Automotiv, we operate one of the largest
+              global warehouse networks with over 12,300 facilities
+              worldwide. By combining scalable space with
+              advanced logistics solutions.
+            </div>
+            <div className="col-start-1 col-end-3">
+              <div className="bg-gray-200 h-[280px] p-3 flex items-end justify-start relative">
+                <div className="p-3 bg-white/10 text-white backdrop-blur-sm">
+                  TEXT
+                </div>
+                <div className="absolute -top-6 -right-6 size-12 border border-brand-red rounded-full grid place-items-center z-10">
+                  <div className="size-9 rounded-full grid place-items-center bg-brand-red text-white">
+                    <Plus className="size-4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-start-5 col-end-7 place-content-end  text-xs">
+              <div className="h-14 flex items-center gap-2 border-b">
+                text
+              </div>
+              <div className="h-14 flex items-center gap-2 border-b">
+                text
+              </div>
+              <Link href="https://dashboard.automotiv.app" target="_blank" className="group h-14 flex items-center justify-between gap-2 px-0 hover:px-6   py-3 border-b-2 border-brand-red hover:bg-white transition-all duration-300">
+                Get into the dashboard
+                <ChevronRight className="size-4" />
+              </Link>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <section className="py-30">
-        <div className="page-width space-y-30">
+      <section className="py-30 overflow-hidden ">
+        <div className="page-width space-y-20 relative">
           <header className="flex flex-col space-y-1">
             <h2 className="max-w-xl text-4xl font-bold tracking-tight">
               Built for the founders that keep the world moving
             </h2>
           </header>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-            <div className="aspect-square rounded-md bg-accent"></div>
-            <div className="aspect-square rounded-md bg-accent"></div>
-            <div className="aspect-square rounded-md bg-accent"></div>
-            <div className="aspect-square rounded-md bg-accent"></div>
-          </div>
+          <FoundersSwiper />
         </div>
       </section>
 
