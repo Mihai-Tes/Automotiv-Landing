@@ -25,7 +25,7 @@ export const navData: NavItem[] = [
         title: "Dashboard",
         href: "/platform/dashboard",
         description: "A bird's eye view of your entire shop operation.",
-        image: "/media/logo_symbol_red.svg"
+        image: "/media/pictures/modern-warehouse.jpg"
     },
     {
         childOf: "Platform",

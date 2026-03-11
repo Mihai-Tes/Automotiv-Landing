@@ -33,8 +33,9 @@ body {
   --radius-4xl: calc(var(--radius) + 16px);
 
   --color-brand-red: var(--brand-red);
+  --color-off-white: var(--off-white);
 
-  --color-background: var(--background);
+  --color-background: var(--off-white);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -70,6 +71,7 @@ body {
 :root {
 
   --brand-red: oklch(0.6322 0.254177 20.8493);
+  --off-white: oklch(0.9497 0.0027 286.35);
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);

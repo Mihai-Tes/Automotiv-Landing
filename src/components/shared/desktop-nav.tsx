@@ -29,7 +29,7 @@ export default function DesktopNav() {
                         <NavigationMenuItem key={parent.title}>
                             {hasChildren ? (
                                 <>
-                                    <NavigationMenuTrigger className="bg-transparent">
+                                    <NavigationMenuTrigger className="bg-transparent [state=open]:bg-transparent">
                                         {parent.title}
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
