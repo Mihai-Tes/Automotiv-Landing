@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { LayoutDashboard, Check, ChevronRight, Calendar1, FileText, Bell, Workflow, Sparkles } from "lucide-react"
+import { LayoutDashboard, Check, ChevronRight, Calendar1, FileText, Bell, Workflow } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 

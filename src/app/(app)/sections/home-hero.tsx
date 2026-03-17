@@ -1,11 +1,12 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Star, ChevronRight, Check } from "lucide-react"
+import { Star, ChevronRight, Check, ArrowRight } from "lucide-react"
 
 export default function HeroHomeSection() {
     return (
         <section className="h-screen bg-[#18181b] text-white pt-16">
-            <div className="page-width grid grid-cols-1 lg:grid-cols-6 h-full">
-                <div className="col-span-2 flex flex-col justify-center space-y-6">
+            <div className="page-width grid grid-cols-1 lg:grid-cols-12 h-full">
+                <div className="col-span-4 flex flex-col justify-center space-y-6">
                     <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1">
                             <Star className="fill-current" size={14} />
@@ -17,24 +18,23 @@ export default function HeroHomeSection() {
                         </div>
                         <p className="text-xs">4.86/5 <span className="text-muted-foreground">Google Rating</span></p>
                     </div>
-                    <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">The All-in-One solution for auto repair shops</h1>
+                    <h1 className="text-4xl lg:text-6xl font-semibold tracking-tight">The All-in-One Platform for Workshops and Fleets</h1>
                     <p className="text-sm lg:text-md text-muted-foregroundt lg:mb-12">Increase savings, automate busy work, and make better decisions by managing global HR, Payroll, IT, and Finance in one place.</p>
-                    <div className="flex gap-2">
-                        <Button variant="brand">
-                            Dashboard
-                            <img src="/media/logo_symbol_wt.svg" alt="" className="size-3" />
-                        </Button>
-                        <Button variant="ghost" className="hover:bg-background/5 hover:text-background">
-                            Pricing
-                            <ChevronRight />
-                        </Button>
+                    <div className="flex items-center gap-2 p-2 pl-4 rounded-xl border border-background/20 focus-within:border-background/50">
+                        <input type="text" placeholder="Email address" className="flex-1 text-sm border-0 focus:ring-0 outline-0" />
+                        <Link href="#" className="button-brand-red px-4">Get early access <ChevronRight className="size-3 -mr-2" /></Link>
                     </div>
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <Check size={14} />
-                        Free tier available. No credit card required.
+                    {/* <div className="flex gap-2">
+                        <Link href="#" className="button-brand-red">Get to dashboard <ChevronRight className="size-3 -mr-2" /></Link>
+                        <Link href="/pricing" className="button-brand">Pricing</Link>
+                    </div> */}
+                    <div className="flex flex-col text-[11px] text-muted-foreground">
+                        <span>Get notified when we launch.</span>
+                        <span>We care about your data in our <Link href="#" className="underline">privacy policy</Link>.</span>
+                        {/* Free tier available. No credit card required. */}
                     </div>
                 </div>
-                <div className="col-span-4 relative flex items-end">
+                <div className="col-span-8 relative flex items-end">
                     <div className="relative lg:absolute bottom-0 lg:right-0 z-5">
                         <img src="https://images.ctfassets.net/k0itp0ir7ty4/53zTNXtkmfyj4EDjHZ9oc0/202efa01b6aa891add91b8e5844b92c4/Tablet-Hands.png" alt="" />
                     </div>

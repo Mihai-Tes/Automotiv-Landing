@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Mousewheel, Navigation } from 'swiper/modules'
 import 'swiper/css';
 import "swiper/css/pagination"
-import { ChevronLeft, ChevronRight, Warehouse } from "lucide-react"
+import { ArrowUpRight, ChevronLeft, ChevronRight, Warehouse } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
@@ -16,8 +16,8 @@ export default function BlogSliderSection() {
         <section className="py-30 overflow-x-hidden">
             <div className="page-width">
                 <header className="flex flex-col space-y-1 mb-15">
-                    <h2 className="max-w-xl text-4xl font-bold tracking-tight">
-                        Latest Insights from the Future of Garage Automation
+                    <h2 className="text-5xl font-medium tracking-tight">
+                        Latest Insights
                     </h2>
                 </header>
                 <Swiper
@@ -47,8 +47,8 @@ export default function BlogSliderSection() {
                 >
 
                     <SwiperSlide>
-                        <Link href="#" className="group flex flex-col border hover:border-brand-red p-2">
-                            <figure className="w-full aspect-4/3 relative overflow-hidden">
+                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-white">
+                            <figure className="w-full aspect-6/4 relative overflow-hidden">
 
                                 <Image
 
@@ -57,27 +57,31 @@ export default function BlogSliderSection() {
                                     fill
                                     className="object-cover group-hover:scale-105 transition-all duration-300 will-change-transform"
                                 />
+                                <div className="size-9 rounded-full bg-background/10 backdrop-blur-md absolute top-4 right-4 grid place-items-center">
+                                    <ArrowUpRight className="size-4 text-white opacity-75" />
+                                </div>
                             </figure>
                             <div className="flex flex-col p-4 space-y-6">
 
-                                <h3 className="text-xl font-semibold tracking-tighr">Manage all your fleet costs from one modern dashboard</h3>
+                                <h3 className="text-lg font-semibold tracking-tight">Manage all your fleet costs from one modern dashboard</h3>
                                 <div className="flex items-center gap-2">
-                                    <Avatar size="lg">
+                                    <Avatar>
                                         <AvatarImage src="#" />
-                                        <AvatarFallback>XX</AvatarFallback>
+                                        <AvatarFallback className="text-xs">Ed</AvatarFallback>
                                     </Avatar>
-                                    <div className="flex flex-col">
+                                    <div className="flex items-center justify-between w-full">
                                         <span className="text-xs font-semibold">Editor</span>
-                                        <span className="text-xs text-muted-foreground">21 Apr 2027</span>
+                                        <span className="text-[11px] text-muted-foreground">21 Apr 2027</span>
                                     </div>
                                 </div>
                             </div>
                         </Link>
                     </SwiperSlide>
+
 
                     <SwiperSlide>
-                        <Link href="#" className="group flex flex-col border hover:border-brand-red p-2">
-                            <figure className="w-full aspect-4/3 relative overflow-hidden">
+                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-white">
+                            <figure className="w-full aspect-6/4 relative overflow-hidden">
 
                                 <Image
 
@@ -86,27 +90,31 @@ export default function BlogSliderSection() {
                                     fill
                                     className="object-cover group-hover:scale-105 transition-all duration-300 will-change-transform"
                                 />
+                                <div className="size-9 rounded-full bg-background/10 backdrop-blur-md absolute top-4 right-4 grid place-items-center">
+                                    <ArrowUpRight className="size-4 text-white opacity-75" />
+                                </div>
                             </figure>
                             <div className="flex flex-col p-4 space-y-6">
 
-                                <h3 className="text-xl font-semibold tracking-tighr">Manage all your fleet costs from one modern dashboard</h3>
+                                <h3 className="text-lg font-semibold tracking-tight">Manage all your fleet costs from one modern dashboard</h3>
                                 <div className="flex items-center gap-2">
-                                    <Avatar size="lg">
+                                    <Avatar>
                                         <AvatarImage src="#" />
-                                        <AvatarFallback>XX</AvatarFallback>
+                                        <AvatarFallback className="text-xs">Ed</AvatarFallback>
                                     </Avatar>
-                                    <div className="flex flex-col">
+                                    <div className="flex items-center justify-between w-full">
                                         <span className="text-xs font-semibold">Editor</span>
-                                        <span className="text-xs text-muted-foreground">21 Apr 2027</span>
+                                        <span className="text-[11px] text-muted-foreground">21 Apr 2027</span>
                                     </div>
                                 </div>
                             </div>
                         </Link>
                     </SwiperSlide>
+
 
                     <SwiperSlide>
-                        <Link href="#" className="group flex flex-col border hover:border-brand-red p-2">
-                            <figure className="w-full aspect-4/3 relative overflow-hidden">
+                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-white">
+                            <figure className="w-full aspect-6/4 relative overflow-hidden">
 
                                 <Image
 
@@ -115,23 +123,28 @@ export default function BlogSliderSection() {
                                     fill
                                     className="object-cover group-hover:scale-105 transition-all duration-300 will-change-transform"
                                 />
+                                <div className="size-9 rounded-full bg-background/10 backdrop-blur-md absolute top-4 right-4 grid place-items-center">
+                                    <ArrowUpRight className="size-4 text-white opacity-75" />
+                                </div>
                             </figure>
                             <div className="flex flex-col p-4 space-y-6">
 
-                                <h3 className="text-xl font-semibold tracking-tighr">Manage all your fleet costs from one modern dashboard</h3>
+                                <h3 className="text-lg font-semibold tracking-tight">Manage all your fleet costs from one modern dashboard</h3>
                                 <div className="flex items-center gap-2">
-                                    <Avatar size="lg">
+                                    <Avatar>
                                         <AvatarImage src="#" />
-                                        <AvatarFallback>XX</AvatarFallback>
+                                        <AvatarFallback className="text-xs">Ed</AvatarFallback>
                                     </Avatar>
-                                    <div className="flex flex-col">
+                                    <div className="flex items-center justify-between w-full">
                                         <span className="text-xs font-semibold">Editor</span>
-                                        <span className="text-xs text-muted-foreground">21 Apr 2027</span>
+                                        <span className="text-[11px] text-muted-foreground">21 Apr 2027</span>
                                     </div>
                                 </div>
                             </div>
                         </Link>
                     </SwiperSlide>
+
+
 
                 </Swiper>
 

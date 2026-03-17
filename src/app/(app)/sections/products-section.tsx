@@ -1,20 +1,26 @@
-import { Button } from "@/components/ui/button";
-import { Check, ShipWheel, Truck, Warehouse } from "lucide-react";
+import { Check, Truck, Warehouse } from "lucide-react";
 
 export default function ProductsSectiom() {
     return (
         <section className="py-30">
-            <div className="page-width space-y-20">
-                <header className="flex flex-col">
+            <div className="page-width   space-y-20">
+                {/* <header className="flex flex-col">
                     <h2 className="text-4xl font-semibold tracking-tight">
                         Trusted by pro owners for 20+ years.
                     </h2>
-                </header>
+                </header> */}
 
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                    <div className="col-span-full text-xs text-muted-foreground uppercase mb-4">MODULES</div>
+                    <div className="card flex flex-col space-y-6 items-start pr-10">
+                        <p className="text-[11px] text-muted-foreground uppercase tracking-widest">Products</p>
+                        <h2 className="text-2xl font-semibold tracking-tight">
+                            Products that work together to help you break down silos between departments
+                        </h2>
+                        {/* <p className="text-sm text-muted-foreground">Manage your entire business from one place.</p> */}
+                        {/* <div className="w-fit button-brand-red">Get started</div> */}
+                    </div>
 
                     <div className="card flex flex-col items-center rounded-lg bg-white p-6 space-y-6">
                         <div className="size-16 bg-foreground text-blue-500 rounded-xl grid place-items-center my-15">
@@ -22,23 +28,9 @@ export default function ProductsSectiom() {
                         </div>
                         <div className="w-full flex flex-col space-y-1">
 
-                            <h3 className="text-xl font-semibold">Service Manager</h3>
+                            <h3 className="text-xl font-semibold">Workshop Manager</h3>
                             <p className="text-xs text-muted-foreground">
                                 Auto repair shop operations
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div className="card flex flex-col items-center rounded-lg bg-white p-6 space-y-6">
-                        <div className="size-16 bg-foreground text-orange-500 rounded-xl grid place-items-center my-15">
-                            <ShipWheel />
-                        </div>
-                        <div className="w-full flex flex-col space-y-1">
-
-                            <h3 className="text-xl font-semibold">Tyre shop</h3>
-                            <p className="text-xs text-muted-foreground">
-                                Tyre shop operations with inventory
                             </p>
                         </div>
                     </div>
@@ -50,7 +42,7 @@ export default function ProductsSectiom() {
                         </div>
                         <div className="w-full flex flex-col space-y-1">
 
-                            <h3 className="text-xl font-semibold">Fleet manager</h3>
+                            <h3 className="text-xl font-semibold">Fleet Manager</h3>
                             <p className="text-xs text-muted-foreground">
                                 Fleet operations with vehicle inventory
                             </p>
@@ -61,20 +53,6 @@ export default function ProductsSectiom() {
 
 
                 <div className="w-full flex flex-wrap  justify-between gap-6">
-
-                    <Button size="lg" className="bg-brand-red text-white">
-                        Get into the dashboard
-                    </Button>
-
-                    <div className="review-card max-w-sm flex flex-col grow-0 space-y-6">
-                        <p className="text-lg font-medium">"Automotiv is an indispensable part of my operations workflow."</p>
-                        <div className="flex items-center gap-3">
-                            <div className="size-10 bg-gray-300 rounded-full grid place-items-center">
-                                JD
-                            </div>
-                            <div className="text-xs text-muted-foreground">John D, Trustpilot Review</div>
-                        </div>
-                    </div>
 
                     <div className="hidden max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-10">
 

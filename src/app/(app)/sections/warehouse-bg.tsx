@@ -1,9 +1,6 @@
 "use client"
 
-import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -11,10 +8,12 @@ import "swiper/css";
 export default function WarehouseBgSection() {
     return (
         <section className="relative h-screen py-30 overflow-x-hidden">
-            <div className="page-width flex flex-col relative z-10 h-full">
+            <div className="page-width flex flex-col relative z-10">
                 <header className="flex flex-col space-y-2 mb-15">
                     <h2 className="text-6xl font-bold tracking-tight text-white">Warehouse</h2>
                 </header>
+            </div>
+            <div className="page-width max-sm:px-1 h-full">
                 <div className="w-full flex items-end justify-between mt-auto">
                     <div />
                     <Swiper
@@ -77,3 +76,4 @@ export default function WarehouseBgSection() {
         </section>
     );
 }
+

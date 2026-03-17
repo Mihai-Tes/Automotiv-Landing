@@ -6,8 +6,7 @@ import DesktopNav from "./desktop-nav"
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { navData } from "./data-nav"
-import Image from "next/image";
+import { navData, type NavItem } from "./data-nav"
 
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -18,15 +17,15 @@ export default function Header() {
     const pathname = usePathname();
 
     // Find if we are currently under a parent section that has children
-    const activeParentItem = navData.find(item =>
+    const activeParentItem = navData.find((item: NavItem) =>
         !item.childOf &&
         item.href !== "/" &&
         pathname.startsWith(item.href) &&
-        navData.some(child => child.childOf === item.title)
+        navData.some((child: NavItem) => child.childOf === item.title)
     );
 
-    const subNavItems = activeParentItem
-        ? navData.filter(item => item.childOf === activeParentItem.title)
+    const subNavItems: NavItem[] = activeParentItem
+        ? navData.filter((item: NavItem) => item.childOf === activeParentItem.title)
         : [];
 
     // Mobile sub-nav dropdown
@@ -39,7 +38,7 @@ export default function Header() {
 
     // Set indicator to active item on mount / path change
     useEffect(() => {
-        const activeIndex = subNavItems.findIndex(item => item.href === pathname);
+        const activeIndex = subNavItems.findIndex((item: NavItem) => item.href === pathname);
         if (activeIndex >= 0 && itemRefs.current[activeIndex]) {
             const li = itemRefs.current[activeIndex]!;
             setIndicatorStyle({
@@ -50,7 +49,7 @@ export default function Header() {
         } else {
             setIndicatorStyle(prev => ({ ...prev, opacity: 0 }));
         }
-    }, [pathname, activeParentItem]);
+    }, [pathname, subNavItems]);
 
     const handleMouseEnter = (index: number) => {
         const li = itemRefs.current[index];
@@ -65,7 +64,7 @@ export default function Header() {
 
     const handleMouseLeave = () => {
         // Snap back to active item
-        const activeIndex = subNavItems.findIndex(item => item.href === pathname);
+        const activeIndex = subNavItems.findIndex((item: NavItem) => item.href === pathname);
         if (activeIndex >= 0 && itemRefs.current[activeIndex]) {
             const li = itemRefs.current[activeIndex]!;
             setIndicatorStyle({
@@ -89,7 +88,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={cn("fixed top-0 left-0 right-0 z-50 text-white bg-[#18181b]/0 transition-all duration-300 ease-in-out", (scroll || subNavOpen) && "bg-[#18181b]/90 backdrop-blur-md")}>
+        <header className={cn("fixed top-0 left-0 right-0 z-50 text-white bg-brand-dark-1/0 transition-all duration-300 ease-in-out", (scroll || subNavOpen) && "bg-brand-dark-1/80 backdrop-blur-xl")}>
             <div className="page-width max-sm:px-5 h-14 md:h-16 flex items-center z-10 relative">
                 <Link href="/" className="group flex items-center gap-2 font-bold text-xl tracking-tighter" aria-label="Automotiv Home">
                     <svg width="29" height="24" viewBox="0 0 7.57 6.35" xmlns="http://www.w3.org/2000/svg" className="size-5">
@@ -128,7 +127,7 @@ export default function Header() {
                             className="relative hidden md:flex items-center h-full text-xs"
                             onMouseLeave={handleMouseLeave}
                         >
-                            {subNavItems.map((item, index) => (
+                            {subNavItems.map((item: NavItem, index: number) => (
                                 <li
                                     key={item.title}
                                     ref={el => { itemRefs.current[index] = el; }}
@@ -171,7 +170,7 @@ export default function Header() {
 
                     {/* Mobile: vertical link list, shown when open */}
                     <ul className="flex md:hidden flex-col pb-2">
-                        {subNavItems.map((item) => (
+                        {subNavItems.map((item: NavItem) => (
                             <li key={item.title}>
                                 <Link
                                     href={item.href}
