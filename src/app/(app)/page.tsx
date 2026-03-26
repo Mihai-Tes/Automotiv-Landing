@@ -11,12 +11,8 @@ import BlogSliderSection from "./sections/blog-slider";
 import { FaqSection } from "./sections/faq-section";
 import AllInOne from "./sections/all-in-one";
 import CustomersGridSection from "./sections/customers-grid";
-import ProductsSection from "./sections/products-section";
-import PrefooterSection from "./sections/prefooter";
 import ProductsSection2 from "./sections/products-section2";
 import ProductsSection3 from "./sections/products-section3";
-import ProductsSection4 from "./sections/products-section4";
-import ReviewsSection from "./sections/reviews";
 
 export default function Home() {
   return (
@@ -24,32 +20,15 @@ export default function Home() {
 
       <HomeHeroSection />
 
-      {/* <ProductsSection4 /> */}
-
       <ProductsSection2 />
 
       <ProductsSection3 />
-
-      {/* <ProductsSection /> */}
-
-
-      {/* <AllInOne /> */}
-
-      {/* <PlatformGridSection /> */}
 
       <CustomersGridSection />
 
       <div className="w-screen h-screen">
         <img src="https://framerusercontent.com/images/7fshAqoL1O3dFQK0x0MXpNnO8RU.webp?scale-down-to=4096&width=9504&height=6336" alt="" className="w-full h-full object-cover" />
       </div>
-
-      {/* <WarehouseBgSection /> */}
-
-      {/* <PlatformGridSection2 /> */}
-
-      {/* <UseCasesSection /> */}
-
-      {/* <ReviewsSection /> */}
 
       <BlogSliderSection />
 

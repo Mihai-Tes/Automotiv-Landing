@@ -6,7 +6,7 @@ import { ChevronRight } from "lucide-react"
 
 export default function Footer() {
     return (
-        <footer className="dark text-foreground h-screen relative flex flex-col justify-between">
+        <footer className="dark text-foreground min-h-screen relative flex flex-col justify-between">
             <div className="page-width py-30 z-20">
                 <div className="max-w-xl space-y-2">
                     <h2 className="text-4xl lg:text-6xl font-semibold tracking-tight">Time is money,<br />save both.</h2>

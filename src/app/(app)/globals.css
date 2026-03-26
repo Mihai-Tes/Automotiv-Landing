@@ -172,3 +172,23 @@ body {
     @apply ease-(--ease);
   }
 }
+
+.marquee {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+  animation: marquee 10s linear infinite;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

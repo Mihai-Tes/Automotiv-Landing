@@ -3,7 +3,7 @@
 
 import { cn } from "@/lib/utils";
 import DesktopNav from "./desktop-nav"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useMemo } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { navData, type NavItem } from "./data-nav"
@@ -24,9 +24,11 @@ export default function Header() {
         navData.some((child: NavItem) => child.childOf === item.title)
     );
 
-    const subNavItems: NavItem[] = activeParentItem
-        ? navData.filter((item: NavItem) => item.childOf === activeParentItem.title)
-        : [];
+    const subNavItems: NavItem[] = useMemo(() => {
+        return activeParentItem
+            ? navData.filter((item: NavItem) => item.childOf === activeParentItem.title)
+            : [];
+    }, [activeParentItem]);
 
     // Mobile sub-nav dropdown
     const [subNavOpen, setSubNavOpen] = useState(false);

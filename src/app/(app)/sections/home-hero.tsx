@@ -33,6 +33,21 @@ export default function HeroHomeSection() {
                         <span>We care about your data in our <Link href="#" className="underline">privacy policy</Link>.</span>
                         {/* Free tier available. No credit card required. */}
                     </div>
+                    <div className="flex flex-col gap-4">
+                        <span className="text-[11px] text-muted-foreground">Trusted by</span>
+                        <div className="marquee-wrapper relative z-10">
+                            <div className="marquee absolute left-0 right-0">
+                                <div className="marquee-content flex items-center gap-10 overflow-hidden invert whitespace-nowrap">
+                                    <img src="https://framerusercontent.com/images/r460TShC3vPmDSlt33D6qGyfw.svg?width=151&height=37" alt="" className="w-24" />
+                                    <img src="https://framerusercontent.com/images/HiGAuMpQ2cZIqZAoeisAZ0Wf0k.svg?width=99&height=29" alt="" className="w-24" />
+                                    <img src="https://framerusercontent.com/images/Qwup2aFsHBvFPna2irxUJcwMo.svg?width=154&height=37" alt="" className="w-24" />
+                                    <img src="https://framerusercontent.com/images/1l9i5n4v2OoLhJTtl2wevJbn2DM.svg?width=100&height=25" alt="" className="w-24" />
+                                    <img src="https://framerusercontent.com/images/1l9i5n4v2OoLhJTtl2wevJbn2DM.svg?width=100&height=25" alt="" className="w-24" />
+                                    <img src="https://framerusercontent.com/images/vNWaR5nx51nsA2XoOA1k7tzVS4.svg?width=157&height=37" alt="" className="w-24" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-span-8 relative flex items-end">
                     <div className="relative lg:absolute bottom-0 lg:right-0 z-5">

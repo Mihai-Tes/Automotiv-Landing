@@ -7,13 +7,13 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Mousewheel, Navigation } from 'swiper/modules'
 import 'swiper/css';
 import "swiper/css/pagination"
-import { ArrowUpRight, ChevronLeft, ChevronRight, Warehouse } from "lucide-react"
+import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function BlogSliderSection() {
     return (
-        <section className="py-30 overflow-x-hidden">
+        <section className="dark bg-brand-dark-1 text-foreground py-30 overflow-x-hidden">
             <div className="page-width">
                 <header className="flex flex-col space-y-1 mb-15">
                     <h2 className="text-5xl font-medium tracking-tight">
@@ -47,7 +47,7 @@ export default function BlogSliderSection() {
                 >
 
                     <SwiperSlide>
-                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-white">
+                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-muted">
                             <figure className="w-full aspect-6/4 relative overflow-hidden">
 
                                 <Image
@@ -80,7 +80,7 @@ export default function BlogSliderSection() {
 
 
                     <SwiperSlide>
-                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-white">
+                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-muted">
                             <figure className="w-full aspect-6/4 relative overflow-hidden">
 
                                 <Image
@@ -113,7 +113,7 @@ export default function BlogSliderSection() {
 
 
                     <SwiperSlide>
-                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-white">
+                        <Link href="#" className="group flex flex-col rounded-xl overflow-hidden bg-muted">
                             <figure className="w-full aspect-6/4 relative overflow-hidden">
 
                                 <Image
